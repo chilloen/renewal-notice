@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-items: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #191919;
+}
+
+
+.main-image {
+    width: 600px;
+    height: auto;
+    margin: auto 0;
+}
+
+.contents {
+    width: 600px;
+    margin: auto 0;
+}
+
+.contents_title {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Pretendard-Bold';
+}
+
+.content {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-family: 'Pretendard-Regular';
+}
+
+@media (max-width: 600px) {
+    body {
+        overflow: hidden;
+        touch-action: none;
+    }
+    .main-image {
+        width: 100%;
+    }
+
+    .contents {
+        margin-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contents_title {
+        margin-top: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .content {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+}
